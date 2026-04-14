@@ -12,7 +12,7 @@
       {
         "default": null,
         "description": "The name displayed for the user, typically used for identification purposes; must be unique within the identity store.",
-        "nullable": false,
+        "nullable": true,
         "type": "string"
       }
     ],
@@ -28,7 +28,7 @@
       {
         "default": null,
         "description": "The identifier of the AWS Identity Store associated with the user, required for managing user resources.",
-        "nullable": false,
+        "nullable": true,
         "type": "string"
       }
     ],
@@ -44,7 +44,7 @@
       {
         "default": null,
         "description": "Specifies the user's display name, which is required and must be unique within the identity store.",
-        "nullable": false,
+        "nullable": true,
         "type": "list(object({family_name: string,formatted: optional(string),given_name: string,honorific_prefix: optional(string),honorific_suffix: optional(string),middle_name: optional(string)}))"
       }
     ],
@@ -100,7 +100,7 @@
       {
         "default": null,
         "description": "Specifies the unique name of the user within the identity store; must meet the naming conventions of the identity provider.",
-        "nullable": false,
+        "nullable": true,
         "type": "string"
       }
     ],
